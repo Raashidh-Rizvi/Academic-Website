@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.admission-wrapper{
+    height: auto;
+}
+/* about top */
+.admission-wrapper .admission-top{
+    margin-inline:auto;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 7px;
+    box-shadow: 5px 5px #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 250px;
+    max-height: 250px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.admission-wrapper > .admission-top > .admission-top-left{
+    width: 35%;
+}
+.admission-wrapper > .admission-top > .admission-top-left>p{
+    width: fit-content;
+    background-color: blanchedalmond;
+    font-size: 0.7rem;
+    padding: 1.5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.admission-wrapper > .admission-top > .admission-top-left>h2{
+    padding: 10px 0;
+    font-size: 1.7rem;
+}
+
+.admission-wrapper > .admission-top > .admission-top-right{
+    width: 65%;
+    font-size: 0.9rem;
+}
+
+
+/* Admission process */
+.admission-wrapper >.admission-process{
+    padding-bottom: 35px;
+}
+.admission-wrapper >.admission-process > .admission-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-inline: auto;
+    padding: 20px 0;
+}
+
+
+/* Admission fee */
+.admission-wrapper > .admission-fee > .admission-table-1{
+    width: 100%;
+    height: auto;
+    margin-inline: auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 45px;
+    border: 2px solid #000;
+    border-radius: 7px;
+    box-shadow: 3px 3px #000;
+    font-size: 1.2rem;
+    font-weight: 350;
+    overflow: auto;
+}
+.admission-wrapper > .admission-fee > .admission-table-1 > table{
+    width: 90%;
+    margin-inline: auto;
+    height: auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1px solid #000;
+    cursor: pointer;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.admission-wrapper > .admission-fee > .admission-table-1 > #t1{
+    margin-bottom: 20px;
+    background-color: antiquewhite;
+    font-weight: 400;
+}
+
+
+.admission-wrapper > .admission-fee > .admission-table-1 th {
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 20%;
+}
+
+.admission-wrapper > .admission-fee > .admission-table-1 tr:first-child td:first-child{
+    border-top-left-radius: 6px;
+}
+.admission-wrapper > .admission-fee > .admission-table-1 tr:first-child td:last-child{
+    border-top-right-radius: 6px;
+}
+
+.admission-wrapper > .admission-fee > .admission-table-1 tr:last-child td:first-child{
+    border-bottom-left-radius: 6px;
+}
+.admission-wrapper > .admission-fee > .admission-table-1 tr:last-child td:last-child{
+    border-bottom-right-radius: 6px;
+}
+
+.admission-wrapper > .admission-fee > .admission-table-1 td{
+    border: 1px solid #000;
+    padding: 7px;
+    width: 20%;
+}
+
+/* admission table 2 */
+.admission-wrapper > .admission-fee > .admission-table-2{
+    width: 100%;
+    height: auto;
+    margin-inline: auto;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    border: 2px solid #000;
+    border-radius: 7px;
+    box-shadow: 3px 3px #000;
+    overflow: auto;
+}
+.admission-wrapper > .admission-fee > .admission-table-2 > div {
+    width: 90%;
+    margin-inline: auto;
+    border: 2px solid #000;
+    border-radius: 6px;
+    padding: 10px 15px;
+    background-color: antiquewhite;
+    font-size: 1.1rem;
+    font-weight: 450;
+    margin-bottom: 25px;
+}
+.admission-wrapper > .admission-fee > .admission-table-2 >table{
+    margin-inline: auto;
+    width: 90%;
+    border-spacing: 0;
+    border: 1px solid #000;
+    border-radius: 6px;
+    font-weight: 350;
+    font-size: 1.1rem;
+}
+
+.admission-wrapper > .admission-fee > .admission-table-2 >table td{
+    border: 1px solid #000;
+    padding: 8px;
+}
+
+.admission-wrapper > .admission-fee > .admission-table-2 >table tr:first-child td:first-child{
+    border-top-left-radius: 5px;
+}
+.admission-wrapper > .admission-fee > .admission-table-2 >table tr:first-child td:last-child{
+    border-top-right-radius: 5px;
+}
+
+.admission-wrapper > .admission-fee > .admission-table-2 >table tr:last-child td:first-child{
+    border-bottom-left-radius: 5px;
+}
+.admission-wrapper > .admission-fee > .admission-table-2 >table tr:last-child td:last-child{
+    border-bottom-right-radius: 5px;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width:1150px) {
+    /* Admission process */
+    .admission-wrapper >.admission-process > .admission-cards{
+        grid-template-columns: 1fr 1fr ;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .admission-wrapper .admission-top{
+        flex-direction: column;
+        max-height: none;
+        height: fit-content;
+        padding: 15px 0;
+    }
+
+    /* Admission process */
+    .admission-wrapper >.admission-process > .admission-cards{
+        grid-template-columns: 1fr ;
+    }
+
+}

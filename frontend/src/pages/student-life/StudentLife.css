@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* students-life top */
+.students-life-wrapper .students-life-top{
+    margin-inline:auto;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 7px;
+    box-shadow: 5px 5px #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 250px;
+    max-height: 250px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.students-life-wrapper > .students-life-top > .students-life-top-left{
+    width: 35%;
+}
+.students-life-wrapper > .students-life-top > .students-life-top-left>p{
+    width: fit-content;
+    background-color: blanchedalmond;
+    font-size: 0.7rem;
+    padding: 1.5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.students-life-wrapper > .students-life-top > .students-life-top-left>h2{
+    padding: 10px 0;
+    font-size: 1.7rem;
+}
+
+.students-life-wrapper > .students-life-top > .students-life-top-right{
+    width: 65%;
+    font-size: 0.9rem;
+}
+
+
+/* students activity */
+.students-life-wrapper> .std-activity{
+    margin-bottom: 40px;
+}
+.students-life-wrapper> .std-activity  .activity-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    margin-inline: auto;
+}
+
+/* students-events */
+.students-life-wrapper > .std-events{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.students-life-wrapper> .std-events  .event-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    margin-inline: auto;
+}
+
+
+/* support cards */
+.students-life-wrapper > .std-support{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.students-life-wrapper> .std-support  .support-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    margin-inline: auto;
+}
+
+
+/* responsive */
+
+@media screen and (max-width:1100px) {
+    /* student life */
+    .students-life-wrapper>.std-activity > .activity-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .students-life-wrapper>.std-events > .event-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .students-life-wrapper>.std-support > .support-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media screen and (max-width:870px) {
+    .students-life-wrapper .students-life-top{
+        flex-direction: column;
+        max-height: none;
+        height: fit-content;
+        padding: 15px 0;
+    }
+
+    .students-life-wrapper>.std-events > .event-cards{
+        grid-template-columns: 1fr;
+    }
+
+    .students-life-wrapper>.std-support > .support-cards{
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media screen and (max-width:670px) {
+    /* student life */
+    .students-life-wrapper>.std-activity > .activity-cards{
+        grid-template-columns: 1fr ;
+    }
+
+}

@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.academics-wrapper{
+    height: auto;
+}
+/* about top */
+.academics-wrapper .academics-top{
+    margin-inline:auto;
+    width: 100%;
+    border: 1px solid #000;
+    border-radius: 7px;
+    box-shadow: 5px 5px #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 250px;
+    max-height: 250px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.academics-wrapper > .academics-top > .academics-top-left{
+    width: 35%;
+}
+.academics-wrapper > .academics-top > .academics-top-left>p{
+    width: fit-content;
+    background-color: blanchedalmond;
+    font-size: 0.7rem;
+    padding: 1.5px;
+    border: 1px solid #000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.academics-wrapper > .academics-top > .academics-top-left>h2{
+    padding: 10px 0;
+    font-size: 1.7rem;
+}
+
+.academics-wrapper > .academics-top > .academics-top-right{
+    width: 65%;
+    font-size: 0.9rem;
+}
+
+
+/* features */
+.academics-wrapper > .academics-features{
+    padding-bottom: 20px;
+    margin-inline: auto;
+}
+.academics-wrapper > .academics-features > .feature-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-inline: auto;
+    padding: 20px 0;
+}
+
+/* Learning */
+.academics-wrapper>.academics-learn{
+    margin-inline: auto;
+}
+.academics-learn > .learn-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 20px 0;
+    margin-inline: auto;
+}
+
+/* academics-gallery */
+.academics-wrapper > .academics-gallery{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.academics-wrapper > .academics-gallery > .gallery-menu > ul{
+    width: 80%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-inline: auto;
+}
+.academics-wrapper > .academics-gallery > .gallery-menu{
+    padding-top: 15px;
+}
+.academics-wrapper > .academics-gallery > .gallery-menu > ul >li{
+    width: auto;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 550;
+}
+.academics-wrapper > .academics-gallery > .gallery-menu > ul >li:hover{
+    background-color: antiquewhite;
+}
+
+.academics-wrapper > .academics-gallery > .gallery-cards{
+    width: 100%;
+    padding: 30px 0;
+}
+
+
+/* dynamic use */
+.show-gallery{
+    display: block;
+}
+.hide-gallery{
+    display: none;
+}
+.selected{
+    background-color: antiquewhite;
+}
+
+/* responsive */
+@media screen and (max-width:1200px) {
+    /* academics-learn */
+    .academics-wrapper > .academics-learn > .learn-cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:1100px) {
+    /* academics */
+    .academics-wrapper > .academics-features > .feature-cards{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width:1000px) {
+    /* academics */
+    .academics-wrapper > .academics-features > .feature-cards{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:870px) {
+    .academics-wrapper .academics-top{
+        flex-direction: column;
+        max-height: none;
+        height: fit-content;
+        padding: 15px 0;
+    }
+
+    /* academics-learn */
+    .academics-wrapper > .academics-learn > .learn-cards{
+        width: 80%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media screen and (max-width:670px) {
+    /* academics */
+    .academics-wrapper > .academics-features > .feature-cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

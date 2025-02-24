@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* home top */
+.home-wrapper > .home-top{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.home-wrapper > .home-top > .home-top-left{
+    width: 50%;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+.home-wrapper > .home-top > .home-top-left > img{
+    width: 100%;
+    height: auto;
+
+}
+.home-wrapper > .home-top > .home-top-right{
+    width: 50%;
+    padding: 15px;
+    list-style: none;
+}
+.home-wrapper > .home-top > .home-top-right > li{
+    width: 100%;
+    padding-bottom: 10px;
+}
+
+.home-wrapper > .home-top > .home-top-right > li > .second-sec{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    border: 1px solid #000;
+    border-radius: 7px;
+    text-align: center;
+    box-shadow: 3px 3px rgb(5, 5, 5);
+}
+.home-wrapper > .home-top > .home-top-right > li > .second-sec > div{
+    width: 100%;
+    margin-right: 15px;
+    padding: 10px;
+}
+
+
+/* home benefits */
+.home-wrapper > .home-benefits{
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.home-wrapper > .home-benefits> .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* home testimonials */
+.home-wrapper > .home-testimonials{
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+    padding: 15px 0;
+}
+.home-wrapper > .home-testimonials> .testimonial-cards{
+    width: 100%;
+    padding: 0 10px;
+    height: auto;
+    margin-inline: auto;
+    display: flex;
+    overflow: auto;
+    justify-content: space-between;
+}
+
+
+/* home FAQ */
+.home-wrapper > .home-faq {
+    width: 100%;
+    margin-inline: auto;
+    text-align: center;
+    padding: 15px 0;
+}
+.home-wrapper > .home-faq > .faq-cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+
+}
+
+
+
+/* responsive */
+@media screen and (max-width:870px) {
+    .home-wrapper > .home-top{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        max-height: fit-content;
+    }
+    .home-wrapper > .home-top > .home-top-left{
+        width: 100%;
+    }
+    .home-wrapper > .home-top > .home-top-left>img{
+        width: 100%;
+    }
+    .home-wrapper > .home-top > .home-top-right{
+        width: 100%;
+    }
+
+    /* home-benefits-cards */
+    .home-wrapper > .home-benefits> .cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* home FAQ */
+    .home-wrapper > .home-faq > .faq-cards{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px;
+
+    }
+}
+
+@media screen and (max-width:670px) {
+    /* home-benefits-cards */
+    .home-wrapper > .home-benefits> .cards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .home-wrapper > .home-benefits >h3{
+        font-size: 1.4rem;
+    }
+
+
+    /* home-testimonials-cards */
+    .home-wrapper > .home-testimonials> .testimonial-cards{
+        width: 100%;
+        margin-inline: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-wrapper > .home-testimonials >h3{
+        font-size: 1.4rem;
+    }
+}

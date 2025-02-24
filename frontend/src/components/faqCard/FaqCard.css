@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+
+.faq-card >.answer.showing{
+    animation: opac 0.4s ease forwards;
+}
+.expose{
+    animation: slideIn2 0.6s ease forwards;
+}
+.faq-card{
+    width: 90%;
+    margin-inline: auto;
+    overflow: hidden;
+    background-color: antiquewhite;
+    max-height: fit-content;
+    border: 1px solid #000;
+    border-radius: 7px;
+    padding: 10px;
+}
+.faq-card > .qns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-card > .qns >div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.faq-card >.answer{
+    overflow: hidden;
+    opacity: 0;
+}
+
+
+.hl{
+    width: 90%;
+    margin: 10px;
+}
+
+@keyframes slideIn2 {
+    from{max-height:50px }
+    to{max-height:200px}
+}
+@keyframes opac {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
